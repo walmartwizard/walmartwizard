@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>WalmartWizard</title>
+<link rel="icon" type="image/png" href="https://walmartwizard.neocities.org/bricc.ico" />
+      <link href="WamlerfWazred.css" rel="stylesheet" type="text/css">
+      <link href="../Desktop/WalmartWizard/WamlerfWazred.css" rel="stylesheet" type="text/css">
+</head>
+   <body class="scroll">
+      <div id="container">
+      <div id="header">
+		  <center>
+			  <img src="https://walmartwizard.neocities.org/_3dtext2gif_osenietohppq.gif" object-fit: contain; width="250" height="126">
+		  </center>
+      </div>
+      <div id="wrapper">
+         <div id="two-boxes">
+            <div class="box-one scroll">
+               <div class="section-title">
+              <em>Things I Like </em> </div>
+               <div class="content">
+                  <p style="font-size:160%" color="#dfb8f2"><strong><em>Movies</em></strong></p>
+                  <ul>
+                     <li>La Haine</li>
+                     <li>Napoleon Dynamite</li>
+                     <li>Jacob's Ladder</li>
+					 <li>Trainspotting</li>
+					 <li>Full Metal Jacker</li>
+					 <li>Ocean's Eleven</li>
+					 <li>Memento</li>
+					 <li>Harold & Kumar Go To White Castle</li>
+					 <li>The Truman Show</li>
+                  </ul>
+				   <p style="font-size:160%;"><strong><em>Music</em></strong></p>
+				     <li>My Bloody Valentime</li>
+				     <li>Deftones</li>
+				     <li>Panchiko</li>
+				     <li>Sweet Trip</li>
+				     <li>Modest Mouse</li>
+				     <li>Deathconciousness</li>
+				     <li>Whirr</li>
+				     <li>Slowdive</li>
+				     <li>The Police</li>
+				     <li>The Clash</li>
+				     <li>Nirvana</li>
+				     <li>Joy Division</li>
+				     <li>New Order</li>
+				     <li>The Cure</li>
+				     <li>Yung Lean</li>
+				     <li>Bladee</li>
+				     <li>Ecco2K</li>
+				     <li>Whitearmor</li>
+				     <li>basically all of drain gang</li>
+				     <li>Alice in Chains</li>
+				     <li>Team Sleep</li>
+				     <li>Oliver Tree</li>
+				     <li>RØAR</li>
+				     <li>Computerwife</li>
+				     <li>a bunch of other things, i dont remember bru</li>
+               </div>
+            </div>
+            <div class="box-two scroll">
+               <div class="section-title"><em>Other Places I'm On</em></div>
+               <div class="nav-wrapper">
+                  <button><a href="/">Home</a></button>
+                  <button><a href="#">Link</a></button>
+                  <button><a href="instagram.com/wamlerfwazred">Instagram</a></button>
+                  <button><a href="https://www.youtube.com/channel/UCTkBPu_l87FxY7l9-a7XZZQ?">YouTube</a></button>
+                  <button><a href="#">Link</a></button>
+                  <button><a href="#">Link</a></button>
+                  <button><a href="#">Link</a></button>    
+                  <button><a href="#">Link</a></button>
+               </div>
+            </div>
+         </div>
+         <div id="two-boxes">
+            <div class="box-three scroll">
+               <div class="section-title">About Me</div>
+               <div class="content">
+                 <p>&nbsp;woof</p>
+                  <p>&nbsp; im in desprate need of money&nbsp; &nbsp;&nbsp;</p>
+               </div>
+            </div>
+               <div class="box-four scroll">
+                  <div class="section-title">Portfolio i guess</a></div>
+                  <div class="content">
+                     <p>WalmartWizard is a stupid stupid boy</p>
+                  </div>
+               </div>
+         </div>
+         <div id="footer">
+            <p>©WalmartWizard MMXXII</p>
+         </div>
+      </div>
+   </body>
+</html>

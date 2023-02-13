@@ -16,7 +16,6 @@
      background-repeat:repeat;
      color:var(--dkest-color);
      padding:1px;
-     overflow-y:hidden;
 }
 body a {
   color:var(--accent);

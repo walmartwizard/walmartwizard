@@ -221,3 +221,7 @@ defaults: {
     volume: 0.5,
     shuffle:false
 }
+
+summary::marker {
+  color: #dfb8f2;
+}

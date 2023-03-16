@@ -226,6 +226,13 @@ summary::marker {
   color: #634430;
 }
 
+summary {
+  color: #634430;
+  size
+}
+
 details {
 cursor: pointer;
+font-size:160%;
+color:"#dfb8f2;
 }

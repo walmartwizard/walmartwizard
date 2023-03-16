@@ -223,5 +223,9 @@ defaults: {
 }
 
 summary::marker {
-  color: #dfb8f2;
+  color: #634430;
+}
+
+details {
+cursor: pointer;
 }

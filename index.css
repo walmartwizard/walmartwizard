@@ -224,7 +224,7 @@ defaults: {
 
 summary {
   color: #634430;
-  font-size:160%;
+  font-size:130%;
 }
 
 summary::marker {

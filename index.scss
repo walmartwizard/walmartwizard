@@ -1,0 +1,393 @@
+﻿$color_1: var(--dkest-color);
+$color_2: var(--accent);
+$color_3: var(--dk-color);
+$color_4: var(--lt-color);
+$color_5: #634430;
+$font-family_1: Verdana;
+$background-color_1: var(--lt-color);
+$background-color_2: var(--mid-color);
+$background-color_3: #f2b1a4;
+$background-color_4: var(--dk-color);
+$background-color_5: white;
+$background-color_6: var(--dkest-color);
+
+&:root {
+	--dk-color: #bf776b;
+	--mid-color: #f78df7;
+	--lt-color: #ffabff;
+	--dkest-color: #8e534a;
+	--accent: #226051;
+}
+html {
+	margin: 0;
+	padding-top: 25px;
+	padding: 0;
+	height: 100%;
+	font-family: $font-family_1;
+	font-size: 11px;
+	background-image: url("https://github.com/walmartwizard/walmartwizard/blob/meow/img/ypnxZc3.gif?raw=true")> background-repeat:repeat;
+	color: $color_1;
+	padding: 1px;
+}
+body {
+	margin: 0;
+	padding-top: 25px;
+	padding: 0;
+	height: 100%;
+	font-family: $font-family_1;
+	font-size: 11px;
+	background-image: url("https://github.com/walmartwizard/walmartwizard/blob/meow/img/ypnxZc3.gif?raw=true")> background-repeat:repeat;
+	color: $color_1;
+	padding: 1px;
+	a {
+		color: $color_2;
+		font-weight: bold;
+	}
+}
+#container {
+	max-width: 900px;
+	margin: 0 auto;
+	margin-top: 15px;
+	height: 100%;
+}
+h1 {
+	color: $color_3;
+}
+h3 {
+	color: $color_3;
+}
+h5 {
+	color: $color_3;
+}
+h2 {
+	color: $color_2;
+}
+h4 {
+	color: $color_2;
+}
+h6 {
+	color: $color_2;
+}
+#header {
+	max-width: 850px;
+	height: 135px;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin: 0 auto;
+	background-color: $background-color_1;
+	border: 1px solid var(--dkest-color);
+}
+.title {
+	font-size: 35px;
+	text-align: center;
+	font-style: italic;
+}
+#wrapper {
+	margin: 0 auto;
+	max-width: 860px;
+}
+.content {
+	padding: 10px;
+}
+#two-boxes {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 900px;
+}
+.box-one {
+	border: 1px solid var(--dkest-color);
+	background-color: $background-color_1;
+	overflow: auto;
+	height: 200px;
+	width: 418px;
+	margin-left: 5px;
+	margin-top: 5px;
+	margin-right: 5px;
+}
+.box-two {
+	border: 1px solid var(--dkest-color);
+	background-color: $background-color_1;
+	overflow: auto;
+	height: 200px;
+	width: 418px;
+	margin-left: 5px;
+	margin-top: 5px;
+	margin-right: 5px;
+}
+.box-three {
+	border: 1px solid var(--dkest-color);
+	background-color: $background-color_1;
+	overflow: auto;
+	margin-left: 5px;
+	margin-top: 5px;
+	width: 260px;
+	height: 326px;
+}
+.box-four {
+	border: 1px solid var(--dkest-color);
+	background-color: $background-color_1;
+	overflow: auto;
+	margin-top: 5px;
+	margin-left: 5px;
+	width: 581px;
+	height: 326px;
+}
+.box-five {
+	border: 1px solid var(--dkest-color);
+	background-color: $background-color_1;
+	overflow: auto;
+}
+.box-six {
+	border: 1px solid var(--dkest-color);
+	background-color: $background-color_1;
+	overflow: auto;
+}
+.section-title {
+	text-align: center;
+	font-weight: bold;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: $background-color_2;
+	color: $color_1;
+	font-size: 12px;
+}
+.nav-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	width: 400px;
+	height: 50px;
+	margin: 0 auto;
+	justify-content: space-evenly;
+	margin-top: 5px;
+}
+button {
+	width: 190px;
+	height: 35px;
+	background-color: $background-color_2;
+	color: $color_1;
+	font-weight: bold;
+	border: none;
+	margin-top: 5px;
+	margin-right: 5px;
+	a {
+		color: $color_2;
+		font-weight: bold;
+	}
+}
+p {
+	padding: 5px;
+	a {
+		color: $color_1;
+		font-weight: bold;
+	}
+}
+.scroll {
+	&::-webkit-scrollbar-track {
+		background-color: $background-color_1;
+	}
+	&::-webkit-scrollbar {
+		width: 10px;
+		background-color: $background-color_3;
+	}
+	&::-webkit-scrollbar-thumb {
+		background-color: $background-color_4;
+	}
+}
+#footer {
+	text-align: center;
+	padding-top: 5px;
+	margin-bottom: 5px;
+	p {
+		background-color: $background-color_5;
+		display: block;
+		width: 160px;
+		margin: 0 auto;
+		margin-top: 5px;
+		margin-bottom: 5px;
+		padding: 5px;
+	}
+}
+textarea {
+	background-color: $background-color_6;
+	color: $color_4;
+	font-size: 10px;
+}
+defaults {
+	&: {
+		audiobuttonclass: 'ubaplayer-button', autoPlay: null, codecs: [{ name: 'OGG', codec: 'audio/ogg; codecs="vorbis"';
+	}
+}
+@rules {
+	0 {
+	}
+	1 {
+	}
+	2 {
+	}
+}
+] {
+	error: null, pause: null, play: null, resume: null;
+}
+continuous {
+	&: {
+		false {
+			error: null, pause: null, play: null, resume: null;
+		}
+	}
+}
+controlsClass {
+	&: {
+		'ubaplayer-controls' {
+			error: null, pause: null, play: null, resume: null;
+		}
+	}
+}
+extension {
+	&: {
+		null {
+			error: null, pause: null, play: null, resume: null;
+		}
+	}
+}
+fallbackExtension {
+	&: {
+		'.mp3' {
+			error: null, pause: null, play: null, resume: null;
+		}
+	}
+}
+fallbackFunctions {
+	&: {
+		error: null, pause: null, play: null, resume: null;
+	}
+}
+flashAudioPlayerPath {
+	&: {
+		'swf/player.swf' {
+			color: $color_5;
+		}
+	}
+}
+flashExtension {
+	&: {
+		'.mp3' {
+			color: $color_5;
+		}
+	}
+}
+flashObjectID {
+	&: {
+		'ubaplayer-flash' {
+			color: $color_5;
+		}
+	}
+}
+loadingClass {
+	&: {
+		'ubaplayer-loading' {
+			color: $color_5;
+		}
+	}
+}
+loop {
+	&: {
+		false {
+			color: $color_5;
+		}
+	}
+}
+playerContainer {
+	&: {
+		'ubaplayer-container' {
+			color: $color_5;
+		}
+	}
+}
+playingClass {
+	&: {
+		'ubaplayer-playing' {
+			color: $color_5;
+		}
+	}
+}
+swfobjectPath {
+	&: {
+		'js/swfobject.js' {
+			color: $color_5;
+		}
+	}
+}
+volume {
+	&: {
+		0.5 {
+			color: $color_5;
+		}
+	}
+}
+shuffle {
+	&:false {
+		} {
+			summary {
+				&::marker {
+					color: $color_5;
+				}
+			}
+		}
+	}
+}
+details {
+	cursor: pointer;
+}
+summary {
+	color: $color_5;
+	font-size: 130%;
+	background: #8dd792;
+	padding: 5px;
+	border: 2px solid transparent;
+	outline: none;
+	&: focus { border-color: black;
+}
+@media only screen and (max-width: 860px) {
+	html {
+		overflow: visible;
+	}
+	body {
+		overflow: visible;
+	}
+	#header {
+		width: 97.6%;
+	}
+	#container {
+		width: 100%;
+	}
+	.box-one {
+		width: 100%;
+		order: 2;
+	}
+	.box-two {
+		width: 100%;
+		order: 1;
+	}
+	.box-three {
+		width: 100%;
+		width: 98%;
+	}
+	.box-four {
+		width: 100%;
+	}
+	.box-five {
+		width: 100%;
+	}
+	.box-six {
+		width: 100%;
+	}
+	.three-boxes {
+		width: 98%;
+	}
+	.two-boxes {
+		width: 100%;
+	}
+	.wrapper {
+		width: 100%;
+	}
+}

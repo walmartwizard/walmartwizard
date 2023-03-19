@@ -1,2 +1,0 @@
-- name: Sass Build
-  uses: gha-utilities/sass-build@v0.4.11

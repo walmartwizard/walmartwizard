@@ -33,12 +33,20 @@ body a {
  h2, h4, h6 {
      color:var(--accent);
   }
+ h7 {
+     color:var(--accent);
+     font-size:157%;
+     position:relative;
+     left:-195px;
+     top:-1px;
+     color=#dfb8f2
+  }
  #header {
      max-width:850px;
      height:135px;
      margin-left:5px;
      margin-right:5px;
-     margin:0 auto;
+     margin:1px auto;
      background-color:var(--lt-color);
      border:1px solid var(--dkest-color);
      position:relative;
@@ -49,7 +57,7 @@ body a {
      font-style:italic;
 }
  #wrapper {
-     margin:0 auto;
+     margin:-56px auto;
      max-width:860px;
      position:relative; top:60px;
 }

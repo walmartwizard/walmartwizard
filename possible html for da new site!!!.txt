@@ -1,787 +1,381 @@
-
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WamartWizard</title>
-    <link rel="icon" type="image/x-icon" href="Images/Transparents/Pixels/cd.gif">
-    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>walmartwizard</title>
+  <link href="style.css" rel="stylesheet" type="text/css" media=
+  "all">
+  <!--link rel="shortcut icon" href="https://cinni.net/shrine/ace/0kirara_m-doji.sakura.ne.jp.gif" type="image/x-icon"-->
+  <link rel="shortcut icon" href="/images/icon/wing_r.png" type=
+  "image/x-icon">
+  <script src=
+  "https://yesterwebring.neocities.org/script.js"></script>
+  <script src=
+  "https://melonking.net/scripts/frame-link.js"></script>
+  <script>
+      updateTitle = false;
+  </script>
+  <style>
+      a:hover{
+        background:none;
+      }
+      .layout{
+          left:15px;
+          position:relative;
+      }
+          @font-face{
+  font-family: 'fancy';
+  src: url(https://cinni.net/fonts/RomanceA.ttf);
+    }
+          .me div,.you div{
+              font-family: 'fancy';
+              font-size:16px;
+          } 
+      ul{
+        margin:0;
+        padding:0;
+        list-style:none;
+      }
+      li{
+        line-height: 12px;
+      }
+      ul img{
+        width:17px;
+        height:17px;
+        margin-left:2px;
+      }
+      ul a{
+        color:var(--text);
+      }
+      ul a:hover{
+        font-style: normal;
+      }
       
-    <script src="https://unpkg.com/webamp@1.4.0/built/webamp.bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/amplitudejs@{{5.3.2}}/dist/amplitude.js"></script>
-  </head>
-    <body>
-    
-    <main>
-        <div class="header-img"></div>
-        <div class="banner-img"></div>
-    </main>
-    
-    <header>
-    <div class="navbar">
-        <ul>
-        <li><a href="main.html" target="mainbox">Home</a></li>
-        <li><a href="peetrat.html" target="mainbox">About</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="blog.html" target="mainbox">Blog</a></li>            
-        </ul>
-        </div>
-    </header>
-        
-    <div class="container">
-        <div class="containerbody" style="width: 1020px; height: 1660px; margin-left: 100px; margin-top: 13px; background-image: url('Images/Backgrounds/canvas78.png'); border-color: darkmagenta; display: inline; position: absolute; z-index: -1;"></div>
-        
-        <div class="left-container">
-        
-        <div class="sidebar" style="margin-top:20px;">
-            <img src="Images/Transparents/yoshi%20sniff.png" style="position:absolute; top: -118px; width: 90%; left: 14px; z-index: 2;" alt="A transparent png of Yoshi, a green cartoon dinosaur, sniffing a red apple.">
-            <h1 style="font-style: normal;">Navigation</h1>
-
-            <div class="navlink"><a href="gifoftheweek.html" target="mainbox"><img src="Images/Transparents/Pixels/saturn-pixel-small.png" alt="A small pink, orange, and yellow pixel icon of the planet Saturn."> Gif of the week <img src="Images/Transparents/Pixels/new.gif" alt="A flashing gif that says 'New!'."></a></div>
-            <div class="navlink"><a href="buttons.html" target="mainbox"><img src="Images/Transparents/Pixels/saturn-pixel-small.png" alt="A small pink, orange, and yellow pixel icon of the planet Saturn."> Explore the web! <img src="Images/Transparents/Pixels/new.gif" alt="A flashing gif that says 'New!'."></a></div>
-            <div class="navlink"><a href="https://odditycommoddity.123guestbook.com/"><img src="Images/Transparents/Pixels/saturn-pixel-small.png" alt="A small pink, orange, and yellow pixel icon of the planet Saturn."> Sign the guestbook! <img src="Images/Transparents/Pixels/new.gif" alt="A flashing gif that says 'New!'."></a></div>
-            <div class="navlink"><a href="commissions.html" target="mainbox"><img src="Images/Transparents/Pixels/saturn-pixel-small.png" alt="A small pink, orange, and yellow pixel icon of the planet Saturn."> Commission me! (Please?) <img src="Images/Transparents/Pixels/new.gif" alt="A flashing gif that says 'New!'."></a></div>
-            <div class="navlink"><a href="https://gummiewerm.tumblr.com/"><img src="Images/Transparents/Pixels/saturn-pixel-small.png" alt="A small pink, orange, and yellow pixel icon of the planet Saturn."> Tumblr</a></div>
-            <div class="navlink"><a href="https://artfight.net/~GUMMIEWERM"><img src="Images/Transparents/Pixels/saturn-pixel-small.png" alt="A small pink, orange, and yellow pixel icon of the planet Saturn."> Art Fight</a></div>
-        </div>
-        
-        <!--Chatbox-->
-        <div class="sidebar" style='background-image: url("Images/Backgrounds/canvas33.png"); border-color:darkviolet;'>
-        <img src="Images/Transparents/swears.png" style="position: absolute; z-index: 1; left: 127px; top: -20px;" alt="A transparent scan of a drawing of the swear bubble from qbert.">
-        <h1 style="text-align:left">Chatbox:</h1>
-        <iframe src="https://www3.cbox.ws/box/?boxid=3512910&boxtag=wekPh3" width="100%" height="350" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>	
-        </div>
-        
-            
-        <!--Starship Titanic Poster-->
-        <img src="Images/Backgrounds/stposter.gif" style="width: 226px; border-radius: 5px; margin-top: 10px; border: dotted; border-width: 2px; border-color: orangered;" alt="A poster of the Starship Titanic, a 90s sci-fi spaceship, from the original Starship Titanic website. It's a drawing of a white ship of an ultramarine and bright orange background.">
-        
-        <!--Hit Counter-->
-        <div class="sidebar" style='background-image: url("Images/Backgrounds/canvas67.png"); border-color: blueviolet; text-align: center; font-size: 15px;'><p style="margin: 0px; margin-bottom: 5px; font-style: italic;">Congratulations! You are visitor number:</p><a href='https://www.free-website-hit-counter.com'><img src='https://www.free-website-hit-counter.com/c.php?d=9&id=134429&s=2' border='0' alt='Free Website Hit Counter'></a><br / ><small><a href='https://www.free-website-hit-counter.com' title="Free Website Hit Counter" style="font-style: italic;">Free website hit counter</a></small></div>
-            
-        <!--To-Do-->
-        <div class = "sidebar" style='background-image: url("Images/Backgrounds/canvas34.png"); border-color: darkcyan; line-height: 14px; margin-top: 13px;'>
-            <img src="Images/Transparents/welcome.gif" style="position: absolute; z-index: 1; left: -10px; top: -30px; width: 90px;" alt="A transparent black and yellow diamond sign of a stick figure banging their head against a computer desk.">
-            <h1 style="position: relative; z-index: 2;">To-Do:</h1>
-            <div style="margin-top: 0px; margin-bottom: 0px; font-style: italic;">
-                <p style="position: relative; z-index: 2; margin-top: 20px;">⭐ Add more pics to the gallery</p>
-                <p>⭐ Character select page</p>
-                <p>⭐ Archive/library</p>
-                <p>⭐ Video obelisk</p>
-                <p>⭐ Header font</p>
-            </div>
-        </div>
-        </div>
-        
-        
-        <div class="right-container">
-        <!--Music Player-->
-        <div class="sidebar" style="height: 470px; margin-top: 0px; background-image: url('Images/Backgrounds/canvas50.png'); border-color: blueviolet;">
-            <h1 style="z-index: 2; position: relative;">Now Playing:</h1>
-            <div class="music-body">
-        <div class="music-container">
-            <img src="Images/Transparents/jukebox.gif" style="position: absolute; margin-top: -35px; margin-left: -80px; z-index: 1; width: 210px;" alt="A gif of a bouncing green, blue, and purple jukebox.">
-        <div class="music-info">
-            <h1 id="title" style="margin-top: 140px; background: rgba(15, 0, 76, 0.66); width: 210px; z-index: 2; position: relative;">Title</h1>
-            <p style="display: inline;">Artist: </p><p id="artist" style="display: inline;">Artist</p><br>
-            <p style="display: inline;">Album: </p><p id="album" style="display: inline;">Album</p>
-            <div class="progress-container" style="width: 210px; margin-right: -50px; margin-top: 5px;">
-              <div class="progress"></div>
-                <p style="font-size: 15px; display: inline;">00:00</p>
-                <p style="font-size: 15px; display: inline; position: absolute; right: 0px;" id="duration">Duration</p>
-            </div>
-        </div>
-
-            <audio src="https://files.catbox.moe/ec3ruc.mp3" id="audio"></audio>
-            <img src="Images/Transparents/cdromdest.gif" style="position: absolute; margin-left: 65px; z-index: 0; margin-top: 170px; width: 120px; transform: scaleX(-1);" alt="A rotating gif of a blue disk.">
-            <div class="img-container">
-                <img src="Images/Album%20covers/oingo_boingo_unreleased.jpg" alt="Album cover" id="cover" />
-            </div>
-
-            <div class="navigation">
-                <button id="prev" class="action-btn">
-                <img src="https://odditycommoddity.neocities.org/Images/Buttons/left%20swirly%20arrow.gif" alt="Previous track">
-                </button>
-                <button id="play" class="action-btn action-btn-big">
-                <img src="https://odditycommoddity.neocities.org/Images/Buttons/play%20button.gif" alt="Play/Pause">
-                </button>
-                <button id="next" class="action-btn">
-                <img src="https://odditycommoddity.neocities.org/Images/Buttons/right%20swirly%20arrow.gif" alt="Next track">
-                </button>
-            </div>
-            <p style="position: absolute; margin-top: 254px; margin-left: -50px; font-size: 16px; font-weight: 500; text-decoration: underline;">Tracklist:</p>
-            <div class="playlist">
-            <ul class="tracklist">
-                <li data-index="0" onclick="setTrack(0)"><span class="trackInfo"><span class="trackTitle">Title1</span> - <span class="trackArtist">Artist</span></span><span class="trackDuration">Duration</span></li>
-                <li data-index="1" onclick="setTrack(1)"><span class="trackInfo"><span class="trackTitle">Title2</span> - <span class="trackArtist">Artist</span></span><span class="trackDuration">Duration</span></li>
-                <li data-index="2" onclick="setTrack(2)"><span class="trackInfo"><span class="trackTitle">Title3</span> - <span class="trackArtist">Artist</span></span><span class="trackDuration">Duration</span></li>
-                <li data-index="3" onclick="setTrack(3)"><span class="trackInfo"><span class="trackTitle">Title3</span> - <span class="trackArtist">Artist</span></span><span class="trackDuration">Duration</span></li>
-                <li data-index="4" onclick="setTrack(4)"><span class="trackInfo"><span class="trackTitle">Title3</span> - <span class="trackArtist">Artist</span></span><span class="trackDuration">Duration</span></li>
-                <li data-index="5" onclick="setTrack(5)"><span class="trackInfo"><span class="trackTitle">Title3</span> - <span class="trackArtist">Artist</span></span><span class="trackDuration">Duration</span></li>
-                <li data-index="6" onclick="setTrack(6)"><span class="trackInfo"><span class="trackTitle">Title3</span> - <span class="trackArtist">Artist</span></span><span class="trackDuration">Duration</span></li>
-                <li data-index="7" onclick="setTrack(7)"><span class="trackInfo"><span class="trackTitle">Title3</span> - <span class="trackArtist">Artist</span></span><span class="trackDuration">Duration</span></li>
-                <li data-index="8" onclick="setTrack(8)"><span class="trackInfo"><span class="trackTitle">Title3</span> - <span class="trackArtist">Artist</span></span><span class="trackDuration">Duration</span></li>
-                <li data-index="9" onclick="setTrack(9)"><span class="trackInfo"><span class="trackTitle">Title3</span> - <span class="trackArtist">Artist</span></span><span class="trackDuration">Duration</span></li>
-                <li data-index="10" onclick="setTrack(10)"><span class="trackInfo"><span class="trackTitle">Title3</span> - <span class="trackArtist">Artist</span></span><span class="trackDuration">Duration</span></li>
-                <li data-index="11" onclick="setTrack(11)"><span class="trackInfo"><span class="trackTitle">Title3</span> - <span class="trackArtist">Artist</span></span><span class="trackDuration">Duration</span></li>
-                <li data-index="12" onclick="setTrack(12)"><span class="trackInfo"><span class="trackTitle">Title3</span> - <span class="trackArtist">Artist</span></span><span class="trackDuration">Duration</span></li>
-            </ul>
-            </div>
-            <img src="Images/Transparents/dragon%20dane.gif" style="position: absolute; display: inline; top: 328px; left: -110px; width: 190px; transform: scaleX(-1); z-index: 2;" alt="A stop motion gif of the Magic the Dragon Beanie Baby plush dancing.">
-        </div>
-        </div>
-        </div>
-            
-        <!--Sticker Bank-->
-        <div class="sidebar" style="background-image:url(Images/Backgrounds/canvas62.png); border-color: darkturquoise; height: 200px;">
-            <h1>Sticker Bank:</h1>
-            <div class="draggable" style="left: 130px; top: 70px;"><img src="Images/Transparents/bluestar.png" style="width: 40px;" alt="A sticker of a blue holographic star."></div>
-            <div class="draggable" style="left: 50px; top: 80px;"><img src="Images/Transparents/out_of_this_world.png" style="width: 85px;" alt="A sqaure purple sticker with an orange planet and stars on it. There is text in the negative space that says 'out of this world'."></div>
-            <div class="draggable" style="left: 40px; top: 50px;"><img src="Images/Transparents/dinoguitar.png" style="width: 150px;" alt="A holographic sticker of a blue dinosaur playing an electric guitar."></div>
-            <div class="draggable" style="left: 80px; top: 40px;"><img src="Images/Transparents/purple%20star.png" style="width: 60px;" alt="A sticker of a pruple holographic star."></div>
-            <div class="draggable" style="left: 10px; top: 40px;"><img src="Images/Transparents/youre_a_star.png" style="width: 85px;" alt="A square, cyan sticker that says 'You're a star'. The hole in the A is filled with a shooting star."></div>
-            <div class="draggable" style="left: 10px; top: 90px;"><img src="Images/Transparents/yellowstar.png" style="width: 50px;" alt="A sticker of a yellow holographic star."></div>
-            <div class="draggable" style="left: 10px; top: 50px;"><img src="Images/Transparents/flying%20saucer.png" style="width: 210px;" alt="A holographic sticker of a blue flying saucer."></div>
-            <div class="draggable" style="left: 100px; top: 60px;"><img src="Images/Transparents/very_creative.png" style="width: 85px;" alt="A square purple sticker decorated with confetti-like shapes that says 'Very creative'."></div>
-            <div class="draggable" style="left: 80px; top: 100px;"><img src="Images/Transparents/coralstar.png" style="width: 60px;" alt="A sticker of a coral holographic star."></div>
-            <div class="draggable" style="left: 170px; top: 120px;"><img src="Images/Transparents/pink%20star.png" style="width: 50px;" alt="A sticker of a pink holographic star."></div>
-            <div class="draggable" style="left: 20px; top: 90px;"><img src="Images/Transparents/awesome.png" style="width: 85px;" alt="A square sticker that says 'Awesome!' The background is a purple to blue gradient, and the text is a pink to yellow gradient."></div>
-            <div class="draggable" style="left: 10px;"><img src="Images/Transparents/maze_master.png" style="width: 220px;" alt="A sticker that says 'Maze Master'. Each letter has a color of the rainbow coming out of it as a shadow, and all of the colors converge into an arc, giving it a curved tail."></div>
-            <div class="draggable" style="left: 90px; top: 130px;"><img src="Images/Transparents/fantastic.png" style="width: 85px;" alt="A square yellow sticker that says 'Fantastic' in purple text, decorated with purple confetti."></div>
-            <div class="draggable" style="left: 40px; top: 50px;"><img src="Images/Transparents/dinosax.png" style="width: 150px;" alt="A holographic sticker of a purple dinosaur playing saxophone."></div>
-            <div class="draggable" style="left: 10px; top: 90px;"><img src="Images/Transparents/lizard%20sticker.png" style="width: 200px;" alt="A sticker of a rainbow lizard."></div>
-            <div class="draggable" style="left: 40px; top: 50px;"><img src="Images/Transparents/cyanstar.png" style="width: 50px;" alt="A sticker of a cyan holographic star."></div>
-            <div class="draggable" style="left: 80px; top: 150px;"><img src="Images/Transparents/tealstar.png" style="width: 60px;" alt="A sticker of a teal holographic star."></div>
-            <div class="draggable" style="left: 40px; top: 70px;"><img src="Images/Transparents/beetle.png" style="width: 150px;" alt="A shiny sticker of a teal beetle."></div>
-            <div class="draggable" style="left: 130px; top: 70px;"><img src="Images/Transparents/wow.png" style="width: 85px;" alt="A dark purple square sticker that says 'Wow' in colorful letters. There is a bright cyan ripple in the background."></div>
-        </div>
-        
-        <!--Null Webring-->
-        <div class="sidebar" style="position: relative; text-align: center; padding-top: 0px; padding-bottom: 0px; background-image: url('Images/Backgrounds/canvas56.png');">
-        <p style="font-size: 20px; font-style: italic; margin: 5px; text-decoration: underline;">The Null Webring:</p>
-        <script src="https://nuthead.neocities.org/ring/ring.js"></script>
-        </div>
-        
-        <!--Gif of the Week-->
-        <div class="sidebar" style='text-align: center; background-image:url("Images/Backgrounds/back-345.gif"); border-color: darkviolet;'>
-            <img src="Images/Transparents/porygon.gif" style="position: absolute; z-index: 1; left: -25px; bottom: -35px; width: 100px;" alt=" A transparent gif of a Porygon2 pecking the ground in front of it.">
-            <img src="Images/Transparents/gif.gif" style="position: absolute; z-index: 0; right: -30px; top: -15px; width: 130px;" alt="A gif of a spinning 3D text model that says 'Gifs' in all caps.">
-            <h1 style="position: relative; z-index: 1;">Gif of the week:</h1>
-            <img src="Images/Gif%20of%20the%20week/weezer%20fortnite%20dance%20small.gif" style="width: 200px; margin-top: 10px;" alt="A gif of a 3D model of a humanoid figure with a star-shaped head. Their body glows extremely brightly and they are doing the fortnite default dance. The gif has a solid purple background.">
-            <p style="margin-bottom: 5px; margin-top: 8px;">Week of: 7/14/2022</p>
-            <p style="margin: 5px;">weezer fortnite dance</p>
-            <p style="margin-top: 20px;">      </p>
-            <a href="gifoftheweek.html" target="mainbox" style="position: relative;">Previous weeks' gifs >>></a>
-            <p style="position: relative; z-index: 2; font-style: italic; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">updates every whenever!</p>
-        </div>
-        
-        <!--Yesterweb-->
-        <div class="sidebar" style="background-image: none; border: none; text-align: center; padding: 0px;">
-            <div class="yw-widget-full" style="margin: 0px; width: 196px; border-radius: 5px; border: 2px dotted limegreen; padding-left: 30px; padding-right: 0px;" data-yw-url="https://odditycommoddity.neocities.org/"></div>
-            <script>
-            /* == Yesterweb Webring Widgets ==
-             * Written by Lua MacDougall (https://foxgirl.dev/)
-             * Updated 2022-01-14
-             */
-
-            (function() {
-                // https://github.com/luavixen/Patella v2.2.2
-                var Patella = function(n) {
-                    function t(n, t) {
-                        return "__proto__" !== t && s.call(n, t)
-                    }
-
-                    function e(n, t, e) {
-                        y(n, t, {
-                            value: e,
-                            configurable: void 0 !== e,
-                            enumerable: !1,
-                            writable: !1
-                        })
-                    }
-
-                    function r(n) {
-                        return null !== n && "object" == typeof n && !p(n)
-                    }
-
-                    function o(n) {
-                        return "function" == typeof n
-                    }
-
-                    function u(n, t) {
-                        throw new(t ? d : v)(n)
-                    }
-
-                    function i() {
-                        for (var n = "Computed queue overflow! Last 10 functions in the queue:", t = j.length, e = t - 11; t > e; e++) n += "\n" + (e + 1) + ": " + (j[e].name || "anonymous");
-                        u(n, !0)
-                    }
-
-                    function f(n) {
-                        if (!t(n, b) && j.lastIndexOf(n) < x && (j.push(n), t(n, m) || e(n, m, []), !_)) {
-                            _ = !0;
-                            try {
-                                for (; x < j.length; x++)(0, j[x])(), x > O && i()
-                            } finally {
-                                _ = !1, j = [], x = 0
-                            }
-                        }
-                    }
-
-                    function c(n) {
-                        function t(n) {
-                            var t = e.lastIndexOf(n);
-                            0 > t || e.splice(t, 1)
-                        }
-                        r(n) && a(n);
-                        var e = [];
-                        return {
-                            get: function() {
-                                var r = j[x];
-                                return r && 0 > e.lastIndexOf(r) && (e.push(r), r[m].push(t)), n
-                            },
-                            set: function(t) {
-                                r(t) && a(t), n = t;
-                                for (var o = 0; o < e.length; o++) f(e[o])
-                            }
-                        }
-                    }
-
-                    function a(n) {
-                        if (!t(n, h))
-                            for (var r in e(n, h), n)
-                                if (t(n, r)) try {
-                                    y(n, r, c(n[r]))
-                                } catch (l) {}
-                    }
-                    var l = Object,
-                        s = l.hasOwnProperty,
-                        p = Array.isArray,
-                        d = Error,
-                        v = TypeError,
-                        y = l.defineProperty,
-                        h = (l = "function" == typeof Symbol ? Symbol : function(n) {
-                            return "__" + n
-                        })("observe"),
-                        b = l("dispose"),
-                        m = l("depends"),
-                        g = "Argument 'object' is not an object",
-                        w = "Argument 'func' is not a function",
-                        O = 2e3,
-                        _ = !1,
-                        j = [],
-                        x = 0;
-                    return n.computed = function(n) {
-                        return o(n) || u(w), f(n), n
-                    }, n.dispose = function(n, r) {
-                        var i, f;
-                        if (null == n ? (n = j[x]) || u("Tried to dispose of current computed function while not running a computed function", !0) : o(n) || u(w), !t(n, b)) {
-                            if (r || e(n, b), i = n[m])
-                                for (e(n, m, r ? [] : void 0), f = 0; f < i.length; f++) i[f](n);
-                            _ && (f = j.lastIndexOf(n)) > x && j.splice(f, 1)
-                        }
-                        if (!_) return n
-                    }, n.ignore = function(n) {
-                        return r(n) || o(n) || u(g), t(n, h) || e(n, h), n
-                    }, n.observe = function(n) {
-                        return r(n) || o(n) || u(g), a(n), n
-                    }, n
-                }({});
-
-                var model = Patella.observe({
-                    state: 'loading',
-                    error: null,
-                    sites: null
-                });
-
-                try {
-                    var request = new XMLHttpRequest();
-                    request.onreadystatechange = function() {
-                        if (this.readyState !== this.DONE) return;
-                        if ((this.status / 100 | 0) !== 2) {
-                            model.error = new Error(this.status + ' ' + this.statusText);
-                            model.state = 'error';
-                            return;
-                        }
-                        try {
-                            model.sites = JSON.parse(this.responseText);
-                            model.state = 'ready';
-                        } catch (err) {
-                            model.error = err;
-                            model.state = 'error';
-                        }
-                    };
-                    request.open('GET', 'https://webring.yesterweb.org/webring.json');
-                    request.send(null);
-                } catch (err) {
-                    model.error = err;
-                    model.state = 'error';
-                }
-
-                function normalizeURL(url) {
-                    url = (url + '').replace(/\/?$/, '/');
-                    try {
-                        var src = new URL(url);
-                        var dst = new URL('https://example.com/');
-                        dst.hostname = src.hostname;
-                        dst.pathname = src.pathname;
-                        return dst.toString();
-                    } catch (err) {
-                        return url;
-                    }
-                }
-
-                function findSiteIndex(url) {
-                    var sites = model.sites;
-                    var thisURL = normalizeURL(url);
-                    for (var i = 0; i < sites.length; i++) {
-                        var siteURL = normalizeURL(sites[i].url);
-                        if (thisURL.substring(0, siteURL.length) === siteURL) {
-                            return i;
-                        }
-                    }
-                    return -1;
-                }
-
-                function findSitesByWidget($target) {
-                    var thisHref = (
-                        $target.getAttribute('data-yw-url') ||
-                        $target.getAttribute('site') ||
-                        window.location.href
-                    );
-                    var thisIndex = findSiteIndex(thisHref);
-                    if (thisIndex < 0) {
-                        return null;
-                    }
-                    return {
-                        this: model.sites[thisIndex],
-                        next: model.sites[(thisIndex + 1) % model.sites.length],
-                        prev: model.sites[(thisIndex - 1 > 0 ? thisIndex : model.sites.length) - 1],
-                        rand: model.sites[Math.random() * model.sites.length | 0]
-                    };
-                }
-
-                function updateSiteLinks($content, sites) {
-                    $content.querySelector('.yw-link-next').href = sites.next.url;
-                    $content.querySelector('.yw-link-prev').href = sites.prev.url;
-                    $content.querySelector('.yw-link-rand').href = sites.rand.url;
-                }
-
-                function templWidgetFullError($content, message) {
-                    $content.innerHTML = '<p class="yw-error"></p>';
-                    $content.querySelector('.yw-error').innerText = 'Error: ' + message;
-                }
-
-                function templWidgetFull($target) {
-                    $target.innerHTML = (
-                        '<div class="yw-body">\n' +
-                        '  <h4 class="yw-title">Yesterweb Ring</h4>\n' +
-                        '  <div class="yw-content"></div>\n' +
-                        '</div>'
-                    );
-
-                    var $content = $target.querySelector('.yw-content');
-
-                    Patella.computed(function() {
-                        if (model.state === 'loading') {
-                            $content.innerHTML = '<div class="yw-spinner"></div>';
-                            return;
-                        }
-
-                        if (model.state === 'error') {
-                            templWidgetFullError($content, model.error.message);
-                            return;
-                        }
-
-                        if (model.state === 'ready') {
-                            var sites = findSitesByWidget($target);
-                            if (sites == null) {
-                                templWidgetFullError($content, 'site not found in webring');
-                                return;
-                            }
-
-                            $content.innerHTML = (
-                                '<p class="yw-notice">\n' +
-                                '  This site, <strong><a class="yw-site-name"></a></strong>, is keeping the old web alive.\n' +
-                                '  Thanks, <strong class="yw-site-owner"></strong>!\n' +
-                                '</p>\n' +
-                                '<p class="yw-nav">\n' +
-                                '  <a class="yw-link-next yw-link">[Next]</a>\n' +
-                                '  <a class="yw-link-prev yw-link">[Prev]</a>\n' +
-                                '  <a class="yw-link-rand yw-link">[Rand]</a>\n' +
-                                '  <br>\n' +
-                                '  <a class="yw-link-home yw-link" href="https://yesterweb.org/webring/members.html">[Members]</a>\n' +
-                                '</p>'
-                            );
-
-                            updateSiteLinks($content, sites);
-
-                            var $siteName = $content.querySelector('.yw-site-name');
-                            $siteName.href = sites.this.url;
-                            $siteName.innerText = sites.this.name;
-
-                            var $siteOwner = $content.querySelector('.yw-site-owner');
-                            $siteOwner.innerText = sites.this.owner;
-                        }
-                    });
-                }
-
-                function templWidgetMini($target) {
-                    $target.innerHTML = (
-                        '<a class="yw-title" href="https://yesterweb.org/webring/members.html">The Yesterweb Ring</a>\n' +
-                        '<p class="yw-content"></p>'
-                    );
-
-                    var $content = $target.querySelector('.yw-content');
-
-                    Patella.computed(function() {
-                        if (model.state === 'loading') {
-                            $content.innerText = 'Loading...';
-                        }
-
-                        if (model.state === 'error') {
-                            $content.innerText = 'Error: ' + model.error.message;
-                        }
-
-                        if (model.state === 'ready') {
-                            var sites = findSitesByWidget($target);
-                            if (sites == null) {
-                                $content.innerText = 'Error: site not found in webring';
-                                return;
-                            }
-
-                            $content.innerHTML = (
-                                '<a class="yw-link-next yw-link">Next</a>\n' +
-                                '<a class="yw-link-prev yw-link">Prev</a>\n' +
-                                '<a class="yw-link-rand yw-link">Rand</a>'
-                            );
-
-                            updateSiteLinks($content, sites);
-                        }
-                    });
-                }
-
-                function templWidgetText($target) {
-                    $target.innerHTML = (
-                        '<p class="yw-content">\n' +
-                        '  <a class="yw-link-rand yw-link" href="#">???</a>\n' +
-                        '  <span>//</span>\n' +
-                        '  <a class="yw-link-prev yw-link" href="#">&lt;&lt;</a>\n' +
-                        '  <a class="yw-link-home yw-link" href="https://yesterweb.org/webring/">Yesterweb</a>\n' +
-                        '  <a class="yw-link-next yw-link" href="#">&gt;&gt;</a>\n' +
-                        '  <span>//</span>\n' +
-                        '  <a class="yw-link-home yw-link" href="https://yesterweb.org/webring/members.html">..</a>\n' +
-                        '</p>'
-                    );
-
-                    Patella.computed(function() {
-                        if (model.state !== 'ready') return;
-
-                        var sites = findSitesByWidget($target);
-                        if (sites == null) return;
-
-                        updateSiteLinks($target, sites);
-                    });
-                }
-
-                var style = (
-                    '@font-face {\n' +
-                    '  font-family: "Yesterweb Monster";\n' +
-                    '  src: url("https://cloudflare-ipfs.com/ipfs/QmaKT1nHC9JM5xmz7cRuRcB8jrkRjxdPsLaLnyzEta3e8R/MonsterFriendFore.woff") format("woff");\n' +
-                    '}\n' +
-                    '\n' +
-                    '@font-face {\n' +
-                    '  font-family: "Yesterweb Nova Square";\n' +
-                    '  src: url("https://cloudflare-ipfs.com/ipfs/QmaKT1nHC9JM5xmz7cRuRcB8jrkRjxdPsLaLnyzEta3e8R/NovaSquare.woff") format("woff");\n' +
-                    '}\n' +
-                    '\n' +
-                    '.yw-widget-full:not(.yw-raw) {\n' +
-                    '  display: block;\n' +
-                    '  width: 190px;\n' +
-                    '  margin: 0;\n' +
-                    '  border: 3px double limegreen;\n' +
-                    '  padding: 16px;\n' +
-                    '  background-color: black;\n' +
-                    '  background-image: url("https://cloudflare-ipfs.com/ipfs/QmaKT1nHC9JM5xmz7cRuRcB8jrkRjxdPsLaLnyzEta3e8R/gridnew.gif");\n' +
-                    '  color: white;\n' +
-                    '  text-align: center;\n' +
-                    '  font-size: 12px;\n' +
-                    '  font-family: Arial, Helvetica, sans-serif;\n' +
-                    '}\n' +
-                    '\n' +
-                    '.yw-widget-full:not(.yw-raw) a {\n' +
-                    '  color: limegreen;\n' +
-                    '  text-decoration: none;\n' +
-                    '}\n' +
-                    '\n' +
-                    '.yw-widget-full:not(.yw-raw) .yw-content {\n' +
-                    '  width: 168px;\n' +
-                    '}\n' +
-                    '\n' +
-                    '.yw-widget-full:not(.yw-raw) .yw-title {\n' +
-                    '  margin: 0 20px 0 -5px;\n' +
-                    '  font-family: "Yesterweb Monster", sans-serif;\n' +
-                    '  font-size: 15px;\n' +
-                    '  line-height: 20px;\n' +
-                    '  letter-spacing: 2px;\n' +
-                    '}\n' +
-                    '\n' +
-                    '.yw-widget-full:not(.yw-raw) .yw-nav,\n' +
-                    '.yw-widget-full:not(.yw-raw) .yw-error {\n' +
-                    '  margin-bottom: 0;\n' +
-                    '}\n' +
-                    '\n' +
-                    '.yw-widget-full:not(.yw-raw) .yw-spinner {\n' +
-                    '  height: 32px;\n' +
-                    '  margin-top: 16px;\n' +
-                    '  background-position: center;\n' +
-                    '  background-repeat: no-repeat;\n' +
-                    '  background-image: url("https://cloudflare-ipfs.com/ipfs/QmaKT1nHC9JM5xmz7cRuRcB8jrkRjxdPsLaLnyzEta3e8R/loading.gif");\n' +
-                    '}\n' +
-                    '\n' +
-                    '.yw-widget-mini:not(.yw-raw) {\n' +
-                    '  display: block;\n' +
-                    '  width: 160px;\n' +
-                    '  margin: 1em 0 1em 0;\n' +
-                    '  padding: 5px;\n' +
-                    '  background-color: #a9ff21;\n' +
-                    '  color: black;\n' +
-                    '  text-align: center;\n' +
-                    '  font-family: "Yesterweb Nova Square", sans-serif;\n' +
-                    '}\n' +
-                    '\n' +
-                    '.yw-widget-mini:not(.yw-raw) a {\n' +
-                    '  color: #0000ff;\n' +
-                    '  font-size: 14px;\n' +
-                    '}\n' +
-                    '\n' +
-                    '.yw-widget-mini:not(.yw-raw) .yw-title {\n' +
-                    '  color: black;\n' +
-                    '  text-decoration: none;\n' +
-                    '  font-size: 16px;\n' +
-                    '}\n' +
-                    '\n' +
-                    '.yw-widget-mini:not(.yw-raw) .yw-content {\n' +
-                    '  margin: 4px 0 4px 0;\n' +
-                    '}\n' +
-                    '\n' +
-                    '.yw-widget-text:not(.yw-raw) {\n' +
-                    '  font-family: sans-serif;\n' +
-                    '  font-weight: 700;\n' +
-                    '  font-size: 11px;\n' +
-                    '}\n' +
-                    '\n' +
-                    '.yw-widget-text:not(.yw-raw) a {\n' +
-                    '  color: limegreen;\n' +
-                    '  text-decoration: none;\n' +
-                    '}'
-                );
-
-                var $style = document.createElement('style');
-                $style.appendChild(document.createTextNode(style));
-                document.head.appendChild($style);
-
-                function addClass($target, className) {
-                    if ($target.className.trim()) {
-                        $target.className += ' ' + className;
-                    } else {
-                        $target.className = className;
-                    }
-                }
-
-                function setupWidgets($list, template) {
-                    for (var i = 0; i < $list.length; i++) {
-                        var $target = $list[i];
-                        if ($target.getAttribute('data-yw-ready') != null) continue;
-                        $target.setAttribute('data-yw-ready', true);
-                        addClass($target, 'yw-widget');
-                        template($target);
-                    }
-                }
-
-                function templCustomWidget($target) {
-                    var type = window.yesterwebType;
-                    if (type === 'text') {
-                        addClass($target, 'yw-widget-text');
-                        templWidgetText($target);
-                    } else if (type === 'mini') {
-                        addClass($target, 'yw-widget-mini');
-                        templWidgetMini($target);
-                    } else {
-                        addClass($target, 'yw-widget-full');
-                        templWidgetFull($target);
-                    }
-                }
-
-                function scanWidgets() {
-                    setupWidgets(document.querySelectorAll('.yw-widget-full'), templWidgetFull);
-                    setupWidgets(document.querySelectorAll('.yw-widget-mini'), templWidgetMini);
-                    setupWidgets(document.querySelectorAll('.yw-widget-text'), templWidgetText);
-                    setupWidgets(document.querySelectorAll('webring-css'), templCustomWidget);
-                }
-
-                window.yesterwebScanWidgets = scanWidgets;
-
-                scanWidgets();
-                window.addEventListener('DOMContentLoaded', scanWidgets);
-            })();
-            </script>
-        </div>
-        
-        <!--Neocreatives Webring-->
-        <div class="sidebar" style="background-image: url('Images/Backgrounds/canvas36.png'); border-color: deeppink; text-align: center; padding-top: 0px; padding-bottom: 5px;">
-            <p style="font-size: 15px; font-style: oblique; font-weight: 540; margin: 5px; text-decoration: underline;">The Neocreatives Webring:</p>
-            <div id='ncring'>
-                <script type="text/javascript" src="https://neocreatives.neocities.org/onionring-variables.js"></script>
-                <script type="text/javascript">
-                    // onionring.js is made up of four files - onionring-widget.js (this one!), onionring-index.js, onionring-variables.js and onionring.css
-                    // it's licensed under the cooperative non-violent license (CNPL) v4+ (https://thufie.lain.haus/NPL.html)
-                    // it was originally made by joey + mord of allium (Ã¨â€™Å“) house, last updated 2020-11-24
-
-                    // === ONIONRING-WIDGET ===
-                    //this file contains the code which builds the widget shown on each page in the ring. ctrl+f 'EDIT THIS' if you're looking to change the actual html of the widget
-
-                    var tag = document.getElementById(ringID); //find the widget on the page
-
-                    thisSite = window.location.href; //get the url of the site we're currently on
-                    thisIndex = null;
-
-                    // go through the site list to see if this site is on it and find its position
-                    for (i = 0; i < sites.length; i++) {
-                      if (thisSite.startsWith(sites[i])) { //we use startswith so this will match any subdirectory, users can put the widget on multiple pages
-                        thisIndex = i;
-                        break; //when we've found the site, we don't need to search any more, so stop the loop
-                      }
-                    }
-
-                    function randomSite() {
-                      otherSites = sites.slice(); //create a copy of the sites list
-                      otherSites.splice(thisIndex, 1); //remove the current site so we don't just land on it again
-                      randomIndex = Math.floor(Math.random() * otherSites.length);
-                      location.href = otherSites[randomIndex];
-                    }
-
-                    //if we didn't find the site in the list, the widget displays a warning instead
-                    if (thisIndex == null) {
-                      tag.insertAdjacentHTML('afterbegin', `
-                        <a href="https://neocreatives.neocities.org/"><img src="https://neocreatives.neocities.org/button.gif"></a>
-                      `);
-                    }
-                    else {
-                      //find the 'next' and 'previous' sites in the ring. this code looks complex
-                      //because it's using a shorthand version of an if-else statement to make sure
-                      //the first and last sites in the ring join together correctly
-                      previousIndex = (thisIndex-1 < 0) ? sites.length-1 : thisIndex-1;
-                      nextIndex = (thisIndex+1 >= sites.length) ? 0 : thisIndex+1;
-
-                      indexText = ""
-                      //if you've chosen to include an index, this builds the link to that
-                      if (useIndex) {
-                        indexText = `<a href='${indexPage}'><span style="font-family: MS UI Gothic">index</span></a>`;
-                      }
-
-                      randomText = ""
-                      //if you've chosen to include a random button, this builds the link that does that
-                      if (useRandom) {
-                        randomText = `<a href='javascript:void(0)' onclick='randomSite()'><span style="font-family: MS UI Gothic;">random</span></a> - `;
-                      }
-
-
-                      //this is the code that displays the widget - EDIT THIS if you want to change the structure
-                      tag.insertAdjacentHTML('afterbegin', `
-                    <center>
-                      <a href='${sites[previousIndex]}'><img src="https://neocreatives.neocities.org/left1.gif"></a> <img src="https://neocreatives.neocities.org/button.gif"> <a href='${sites[nextIndex]}'><img src="https://neocreatives.neocities.org/right1.gif"></a>
-                          <small><center>
-                            ${randomText}
-                            ${indexText}
-                            </small></center></div> </center>
-                      </center>
-                      `);
-
-                    }
-                </script>
-            </div>    
-        </div>
-            
-        <!--Frog-->
-        <a href="http://www.allaboutfrogs.org/funstuff/frogtest.php3">
-        <img src="Images/Bumpers/result11.jpg"  width=226 height=108 style="border-radius: 5px; margin-top: 10px; border: dotted; border-width: 2px; border-color: orangered;" alt="I'm a Golden Mantella Frog!"></a>  
-            
-        </div>
-        
-        <div class="welcome-image">
-            <img src="Images/Transparents/computer%20(2).gif" alt="A dithered gif of a clay person sitting at their computer. They slowly tap the keyboard a few times, then explode into liquid. The liquid fades and the person reappears when the gif loops.">
-        </div>
-        
-        <iframe id="target" name="mainbox" src="main.html" onload="updateURL()" style="overflow: hidden; scrolling: no; width: 100%; border: none;"></iframe>
-        
-        </div>
-         <script src="Scripts/music-player.js"></script>
-         <script src="Scripts/hide-image.js"></script>
-         <script src="Scripts/amplitude.js"></script>
-         <script>    
-        //Make the DIV element draggagle:
-       var offset = 0;
-       var mydivs = document.getElementsByClassName("draggable");
-       for (var i = 0; i < mydivs.length; i++) {
-         dragElement(mydivs[i]);
-       }
-
-       function dragElement(elmnt) {
-         var pos1 = 0,
-           pos2 = 0,
-           pos3 = 0,
-           pos4 = 0;
-         if (elmnt.getElementsByClassName("mydivheader")[0]) {
-           /* if present, the header is where you move the DIV from:*/
-           elmnt.getElementsByClassName(
-             "mydivheader"
-           )[0].onmousedown = dragMouseDown;
-         } else {
-           /* otherwise, move the DIV from anywhere inside the DIV:*/
-           elmnt.onmousedown = dragMouseDown;
-         }
-
-         function dragMouseDown(e) {
-           e = e || window.event;
-           e.preventDefault();
-           // get the mouse cursor position at startup:
-           pos3 = e.clientX;
-           pos4 = e.clientY;
-           document.onmouseup = closeDragElement;
-           // call a function whenever the cursor moves:
-           document.onmousemove = elementDrag;
-         }
-
-         function elementDrag(e) {
-           e = e || window.event;
-           e.preventDefault();
-           // calculate the new cursor position:
-           pos1 = pos3 - e.clientX;
-           pos2 = pos4 - e.clientY;
-           pos3 = e.clientX;
-           pos4 = e.clientY;
-           // set the element's new position:
-           elmnt.style.top = elmnt.offsetTop - pos2 + "px";
-           elmnt.style.left = elmnt.offsetLeft - pos1 + "px";
-         }
-
-         function closeDragElement() {
-           /* stop moving when mouse button is released:*/
-           document.onmouseup = null;
-           document.onmousemove = null;
-         }
-       }
-        </script>
-    </body>
-    
-    <footer>
-    <p>code, art in gallery, and layout © Glowstick Greeble 2022-4EVER!! (unless stated otherwise) Site est. Jan. 22, 2022 Last update: 11-12-2022</p>
-        <p>Proud member of the</p>
-        <div class="buttons" style="margin-top: 10px">
-            <img src="Images/Transparents/Pixels/badge.gif" alt="A pixel art badge that says 'World Wide Web' with a pixel graphic of a globe.">
-        </div>
-    </footer>
+      .weatherIcon{
+        margin:0;
+        vertical-align:bottom;
+      }
+      #current{
+        padding: 0;
+        margin:0;
+        margin-top:3px;
+        font-weight:bold;
+        font-size: .35rem;
+        }
+  </style>
+</head>
+<body class="index">
+  <div class="layout">
+    <a href="https://cinni.net/" class="header"></a>
+    <div class="marquee">
+      <marquee scrollamount="2"><img src="/images/icon/wing_r.png">
+      welcome to cinni's dream home... we hope you enjoy your stay!
+      <img src="/images/icon/wing_l.png"></marquee>
+    </div>
+    <div class="clock">
+      <script language="JavaScript">
+               document.write('<iframe src="http://web.archive.org/web/20071011105905/http://bubbles.sweet.free.fr'
+               +'/clocks/kitty.html" allowTransparency="true" mar'
+               +'ginwidth="0" marginheight="0" height="31" width=9'
+               +'0" name="clock" scrolling="no" border="0" framebor'
+               +'der="0"><\/iframe>');
+      </script>
+    </div>
+    <div class="potd">
+      <!--img src="https://cinni.net/2018-09-29%20(2).gif" style="width:120px;height:120px;padding-top:15px;padding-bottom:15px" title="halloween......:)"-->
+      <a href="https://www.youtube.com/watch?v=EN9auBn6Jys" target=
+      "_blank" title="cibo matto - sugar water"><img src=
+      "https://cinni.net/images/potd/hearts.png" style=
+      "width:120px;height:120px;" alt=
+      "a dithered image of metal hearts on sand"></a><!--
+    <iframe width="120" height="120" src="https://www.youtube-nocookie.com/embed/PmIZ05TxBSo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+    </div>
+    <div class="stats">
+      <center>
+        <a href="http://www.imood.com/users/cinni" target=
+        "_blank"><img src=
+        "http://moods.imood.com/display/uname-cinni/fg-6e45ff/bg-bdecff/imood.gif"
+        style="border:1px dotted #6e45ff;"></a><br>
+        <p id="current"></p>
+      </center>
+      <center style="font-size:5px;margin-bottom:5px">
+        <script language="JavaScript">
+        var fhs = document.createElement('script');var fhs_id = "5665914";
+                           var ref = (''+document.referrer+'');var pn =  window.location;var w_h = window.screen.width + " x " + window.screen.height;
+                           fhs.src = "//freehostedscripts.net/ocounter.php?site="+fhs_id+"&e1=Online User&e2=Online Users&r="+ref+"&m=0&wh="+w_h+"&a=1&pn="+pn+"";
+                           document.head.appendChild(fhs);document.write("<span id='o_"+fhs_id+"'><\/span>");
+        </script> 
+        <script type="text/javascript" src=
+        "//counter.websiteout.net/js/20/0/13983/0"></script><br>
+        <center>
+          <button class="toggle" onclick=
+          "toggleTheme();window.location.reload();" style=
+          "margin:5px auto">change theme</button>
+        </center>
+      </center>
+    </div>
+    <div class="side">
+      <center>
+        <!--FURC STATUS-->
+        <a href="https://www.furcadia.com/"><img src=
+        "https://www.furcadia.com/services/online/myonlinestatus.php4?username=cinni&amp;online_url=https://cinni.net/furc/img/cinni-furc-88x31.gif&amp;offline_url=https://cinni.net/furc/img/cinni-furc-off.png"
+        alt="Furcadia!" border="0"></a> <!-- 99GIF SHOP -->
+         <a href="https://99gifshop.neocities.org/" target=
+        "_blank"><img src=
+        "https://99gifshop.neocities.org/img/88x31.4.png" class=
+        "button"></a> <!--ENTRANCE OR EXIT-->
+         <a href="https://entranceorexit.net/" target=
+        "_blank"><img src=
+        "https://entranceorexit.net/img/eoe_button.png" class=
+        "button"></a> <!--MELONLAND FORUMS-->
+         <a href="https://forum.melonking.net/" target=
+        "_blank"><img src=
+        "https://forum.melonking.net/images/MELONLAND-FORUM.GIF"
+        class="button"></a> <!--RSS-->
+         <a href="https://cinni.net/rss.xml" target=
+        "_blank"><img src="/images/icon/rssbadge.png" style=
+        "padding:1px 0"></a>
+      </center>
+    </div><iframe src="https://cinni.net/home.html" width="565"
+    height="530" frameborder="0" scrolling="yes" name="frame" id=
+    "mainframe"></iframe>
+    <div class="me">
+      <div>
+        <span style="font-size:12px;line-height:12px">✧ ♡</span>
+        <img src="/images/icon/wing_r.png"> me <img src=
+        "/images/icon/wing_l.png"> <span style=
+        "font-size:12px;line-height:12px">♡ ✧</span>
+      </div>
+      <ul>
+        <li>
+          <img src="/images/icon/eye.png"> <a href="about.html"
+          target="frame">about</a>
+        </li>
+        <li>
+          <img src="/images/icon/paintbrush.png"> <a href=
+          "https://cinni.net/art.html" target="frame">art</a>
+        </li>
+        <li>
+          <img src="/images/icon/cd.png"> <a href="x" target=
+          "frame">games</a>
+        </li>
+        <li>
+          <img src="/images/icon/musicnote.png"> <a href=
+          "https://cinni.net/music.html" target="frame">music</a>
+        </li>
+        <li>
+          <img src="/images/icon/book.png"> <a href=
+          "https://cinni.net/me/books/" target="frame">library</a>
+        </li>
+        <li>
+          <img src="/images/icon/candle.png"> <a href=
+          "https://cinni.net/shrine.html" target=
+          "frame">shrines</a>
+        </li>
+        <li>
+          <img src="/images/icon/wing_l.png"> <a href=
+          "https://cinni.net/furc/" target="_blank">furcadia</a>
+        </li>
+        <li>
+          <img src="/images/icon/doll.png"> <a href=
+          "https://cinni.net/doll.html" target="frame">dollz
+          center</a>
+        </li>
+        <li>
+          <img src="/images/icon/heart.gif"> <a href=
+          "https://cinni.net/cliques.html" target=
+          "frame">cliques</a>
+        </li>
+        <li>
+          <img src="/images/icon/kitty.gif"> <a href=
+          "https://cinni.net/about/wip.html" target=
+          "frame">purrgatory</a>
+        </li>
+        <li>
+          <img src="https://cinni.net/images/yys/youvegotmail.gif">
+          <a href=
+          "http://users2.smartgb.com/g/g.php?a=s&amp;i=g26-36688-af"
+          target="_blank">guestbook</a>
+        </li>
+      </ul>
+    </div>
+    <div class="you">
+      <div>
+        <span style="font-size:12px;line-height:12px">✧ ♡</span>
+        <img src="/images/icon/wing_r.png"> you <img src=
+        "/images/icon/wing_l.png"> <span style=
+        "font-size:12px;line-height:12px">♡ ✧</span>
+      </div>
+      <ul>
+        <li>
+          <img src="/images/icon/links.gif"> <a href=
+          "https://cinni.net/links.html" target="frame">cool
+          links</a>
+        </li>
+        <li>
+          <img src="/images/icon/computer.png"> <a href=
+          "https://cinni.net/resources.html" target="frame">artist
+          resources</a>
+        </li>
+        <li>
+          <img src="/images/icon/mochi.gif"> <a href=
+          "https://cinni.net/adopt.html" target="frame">adoption
+          center</a>
+        </li>
+        <li>
+          <img src="https://cinni.net/images/kitten-in-box.gif">
+          <a href="https://cinni.net/toybox/" target="frame">toy
+          box</a>
+        </li>
+        <li>
+          <img src="/images/icon/gift.png"> <a href=
+          "https://cinni.net/web.html" target="frame">web
+          goodies</a>
+        </li>
+        <li>
+          <img src="https://cinni.net/images/ku012.gif"> <a href=
+          "https://cinni.net/kaomoji.html" target=
+          "frame">kaomoji</a>
+        </li>
+        <li>
+          <img src="/images/icon/font.gif"> <a href=
+          "https://cinni.net/font.html" target="frame">fonts</a>
+        </li>
+        <li>
+          <img src="/images/icon/tool.png"> <a href=
+          "https://cinni.net/theme/" target="frame">mod shop</a>
+        </li>
+        <li>
+          <img src="/images/icon/sparkle.gif"> <a href=
+          "https://cinni.net/sitename.html" target="frame">URL
+          generator</a>
+        </li>
+        <li>
+          <img src="/images/icon/globe.gif"> <a href=
+          "https://cinni.net/globe.html" target="frame">globe
+          maker</a>
+        </li>
+        <!--li><img src="https://cinni.net/shrine/ace/0kirara_m-doji.sakura.ne.jp.gif">  <a href="https://cinni.net/sitename.html" target="frame"> URL generator </a></li></li-->
+      </ul>
+      <hr style=
+      "border:none;border-bottom:3px double #6e45ff;margin:5px 0">
+      <ul>
+        <li>
+          <img src="/images/icon/pencil.png"> <a href=
+          "https://oekaki.cinni.net/" target="_blank">oekaki
+          board</a>
+        </li>
+        <li>
+          <img src="/images/icon/archive.png"> <a href=
+          "https://archive.cinni.net/" target="_blank">cutie net
+          archive</a>
+        </li>
+        <li>
+          <img src="/images/icon/ichigo.png"> <a href=
+          "https://directory.cinni.net/" target="_blank">ichigo
+          directory</a>
+        </li>
+        <li>
+          <img src="/images/icon/kofi.png"> <a href=
+          "https://ko-fi.com/cinnii" target="_blank">ko-fi</a>
+        </li>
+      </ul>
+    </div>
+    <div class="dream">
+      <a href="https://cinni.net/dream/x/" target="_blank">
+      <!--<img src="https://cinni.net/images/planetheart.gif"><img src="https://cinni.net/images/dreamrealm_banner.png">-->
+       <img src=
+      "https://99gifshop.neocities.org/items/5/drktorch.gif" style=
+      "margin-top:-50px"><img src=
+      "https://cinni.net/images/dreamrealm_banner.png" style=
+      "margin-bottom:20px;"></a>
+    </div>
+    <div class="music">
+      <a href="https://cinni.net/sonic_blue/" target="_blank">
+      <!--<img src="https://cinni.net/images/web/ani_gldn-sun_sml-slwr.gif"><br><img src="https://cinni.net/images/sonicblue_banner.png" style="position:relative;top:-15px;left:-15px;content:var(==music)">-->
+       <img src=
+      "https://99gifshop.neocities.org/items/3/moon24twirling.gif"
+      style="margin-top:-15px"><br>
+      <img src="https://cinni.net/images/sonicblue_banner.png"
+      style=
+      "position:relative;top:-10px;left:-15px;content:var(--music)">
+      </a>
+    </div>
+    <div class="game">
+      <a href="https://cinni.net/games/home.html" target=
+      "_blank"><img src=
+      "https://cinni.net/images/mygames_banner.png"></a>
+    </div>
+    <div class="cliques">
+      <marquee scrollamount="2" onmouseover="this.stop();"
+      onmouseout="this.start();"><a href=
+      "https://web.archive.org/web/20030707203016/http://celestial-sodapop.net/sanrio/"
+      target="_blank"><img src=
+      "https://cinni.net/images/web/cliq/sanrio1.gif" alt=
+      "i &lt;3 sanrio"></a> <a href=
+      "https://web.archive.org/web/20031204225736/http://tifa.net/strawberry/"
+      target="_blank"><img src=
+      "https://cinni.net/images/web/cliq/straw5.gif" alt=
+      "strawberry adoption"></a> <a href=
+      "https://web.archive.org/web/20030603175727/http://glitter-pop.net/pixel/"
+      target="_blank"><img src=
+      "https://cinni.net/images/web/cliq/pixellove.gif"></a>
+      <a href=
+      "https://web.archive.org/web/20030603175727/http://www.angelfire.com/goth2/deadartistsorg/"
+      target="_blank"><img src=
+      "https://cinni.net/images/web/cliq/artclique.gif"></a>
+      <a href=
+      "https://web.archive.org/web/20030603175727/http://www.pixelclique.cjb.net/"
+      target="_blank"><img src=
+      "https://cinni.net/images/web/cliq/pixelblue3.gif"></a>
+      <a href=
+      "https://web.archive.org/web/20030603175727/http://withoutyou.nu/clique"
+      target="_blank"><img src=
+      "https://cinni.net/images/web/cliq/internet4.gif"></a> 
+      <!--a href="http://web.archive.org/web/20090901170245/http://geocities.com/minivalley1/" target="_blank"><img src="/images/web/cliq/minivalley.gif"></a-->
+      <a href=
+      "http://web.archive.org/web/20040723083110/http://www.bleary-eyed.net/kitty/"
+      target="_blank"><img src=
+      "https://cinni.net/images/web/cliq/kitty.gif"></a> <a href=
+      "https://web.archive.org/web/20070210182600/http://towemy.com/pixels/"
+      target="_blank"><img src=
+      "https://web.archive.org/web/20070303035335im_/http://www.towemy.com/bild/sticker/pagespinner.gif">
+      </a> <a href="https://kowakawaii.moe/" target=
+      "_blank"><img src=
+      "https://cinni.net/images/web/cliq/scarycute.png" title=
+      "I'm scary cute!"></a> <a href="https://dust.kuchiki.net/"
+      target="_blank"><img src=
+      "https://cinni.net/images/web/cliq/a2_2.gif" title=
+      "celestial divine // taurus"></a> <a href=
+      "https://dust.kuchiki.net/" target="_blank"><img src=
+      "https://cinni.net/images/web/cliq/b12.gif" title=
+      "i love anime // yuri"></a> <a href=
+      "https://dust.kuchiki.net/" target="_blank"><img src=
+      "https://cinni.net/images/web/cliq/c4.gif" title=
+      "catastic!!"></a></marquee>
+    </div>
+    <div class="yw-widget-full yw-raw" data-yw-url=
+    "https://cinni.neocities.org/"></div>
+    <script src="https://yesterweb.org/js/widget.js"></script>
+    <div class="rainbow"></div>
+    <div class="l1"></div>
+    <div class="l2">
+      <a href="halloween.html" target="frame"><img src=
+      "https://cinni.net/images/layout4.0_corner1.png"></a>
+    </div>
+    <div class="l3"></div>
+    <div class="l4"></div>
+    <div class="l5"></div>
+    <div class="l6"></div>
+  </div>
+  <div class="pagedoll"></div>
+  <script src=
+  "https://99gifshop.neocities.org/theme-control.js"></script> 
+  <script data-goatcounter="https://cinni.goatcounter.com/count"
+  async src="//gc.zgo.at/count.js"></script> 
+  <script src=
+  "https://test.cinni.net/weather-master/dist/weather.min.js"></script>
+  
+  <script src="/weather/myweather.js"></script>
+</body>
 </html>

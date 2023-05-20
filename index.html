@@ -9,7 +9,6 @@
   <link rel="shortcut icon" href="/images/favicons/aa3afcf7.gif"
   type="image/x-icon">
   <script defer src="/time.js"></script>
-  <script defer src="away.js"></script>
 </head>
   <body onload="startTime()">
 <body>
@@ -193,26 +192,8 @@
       <a href="https://www.hitwebcounter.com" target="_blank">
 <img src="https://hitwebcounter.com/counter/counter.php?page=8346295&amp;style=0007&amp;nbdigits=5&amp;type=ip&amp;initCount=0" title="loser-o-meter" alt="web counter" border="0"></a><br>
       </div>
-    
-      <div id="txt"></div>
+        <div id="time"></div>
     </footer>
   </main>
-<script>
-function startTime() {
-  const today = new Date();
-  let h = today.getHours();
-  let m = today.getMinutes();
-  let s = today.getSeconds();
-  m = checkTime(m);
-  s = checkTime(s);
-  document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
-  setTimeout(startTime, 1000);
-}
-
-function checkTime(i) {
-  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-  return i;
-}
-</script>
 </body>
 </html>

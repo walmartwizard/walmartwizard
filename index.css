@@ -12,7 +12,8 @@ body {
   background: url("https://files.catbox.moe/gia7zv.gif");
   position: relative;
   color: #16161d;
-  font-family: ms pgothic;
+  font-size:11px;
+  font-family:Verdana;
   overflow-x: hidden;
 }
 

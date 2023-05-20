@@ -161,7 +161,7 @@ li {
 a {
   text-decoration: none;
   color: blue;
-  cursor: url(https://cur.cursors-4u.net/food/foo-4/foo377.cur), pointer;
+  cursor: url(https://files.catbox.moe/e74435.cur), pointer;
 }
 
 a:active {
@@ -194,7 +194,7 @@ a:active {
   .sidebar a li:hover {
     position: relative;
     left: 3px;
-    cursor: url(https://cur.cursors-4u.net/food/foo-4/foo377.cur), pointer;
+    cursor: url(https://files.catbox.moe/e74435.cur), pointer;
     background: lightsteelblue;
   }
 }
@@ -282,7 +282,7 @@ a:active {
   grid-area: header;
   background-color: #55d4eb;
   min-height: 300px;
-  background: url("/images/backgrounds/wallhaven-w8emox.jpg");
+  background: url("https://files.catbox.moe/7dpb5u.jpg");
   background-position: 0 -17em;
   background-size: 1100px;
 }
@@ -294,7 +294,7 @@ a:active {
 
 .sidebar {
   grid-area: sidebar;
-  background: url("/images/backgrounds/ss098.jpg");
+  background: url("https://files.catbox.moe/g55ogs.jpg");
   text-align: center;
 }
 
@@ -313,7 +313,7 @@ a:active {
 }
 
 .mid-manga {
-  background: url("./graphics/imgs/manga/60be24a48fea49d9df5fa433bf276d8e.png");
+  background: url("https://files.catbox.moe/7dpb5u.jpg");
   display: flex;
   flex-direction: column;
   place-items: end;
@@ -351,7 +351,7 @@ a:active {
 
 .daily {
   grid-area: daily;
-  background: url("/images/backgrounds/con2.png");
+  background: url("https://files.catbox.moe/cvxxkl.png");
 }
 
 .daily-top {
@@ -387,7 +387,7 @@ a:active {
   padding-inline: 1rem;
   font-weight: bold;
   grid-area: footer;
-  background: url("/images/backgrounds/clwocwl.jpg");
+  background: url("https://files.catbox.moe/7dpb5u.jpg");
 }
 
 /* win98 scrollbar */

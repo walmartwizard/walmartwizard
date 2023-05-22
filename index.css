@@ -283,7 +283,7 @@ a:active {
   background-color: #55d4eb;
   min-height: 300px;
   background: url("https://files.catbox.moe/sr4rw7.jpg");
-  object-fit: contain;
+  object-fit: fill;
   background-position: 0 -17em;
   background-size: 1100px;
 }

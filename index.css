@@ -301,7 +301,7 @@ a:active {
 
 .right {
   grid-area: right;
-  background: #fff;
+  background: url("https://files.catbox.moe/g55ogs.jpg");
 }
 
 .right.flex {

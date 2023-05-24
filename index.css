@@ -568,8 +568,8 @@ a:active {
 	  &: focus { border-color: black;
 }
 	  .btn-group button {
-  background-color: #04AA6D; /* Green background */7
-  border: 1px solid green; /* Green border */
+  background-color: #f78df7; /* Green background */7
+  border: 1px solid pink; /* Green border */
   color: white; /* White text */
   padding: 10px 24px; /* Some padding */
   cursor: pointer; /* Pointer/hand icon */

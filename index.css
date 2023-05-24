@@ -555,4 +555,16 @@ a:active {
   .right img {
     display: none;
   }
+  details {
+	cursor: pointer;
+  }
+  summary {
+	  color: $color_5;
+	  font-size: 130%;
+	  background: #8dd792;
+	  padding: 5px;
+	  border: 2px solid transparent;
+	  outline: none;
+	  &: focus { border-color: black;
+}
 }

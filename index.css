@@ -568,13 +568,13 @@ a:active {
 	  &: focus { border-color: black;
 }
 	  .btn-group button {
-  background-color: #f78df7; /* Green background */7
-  border: 1px solid #bf776b; /* Green border */
-  color: #ffabff; /* White text */
-  padding: 15px 25px; /* Some padding */
-  cursor: hand; /* Pointer/hand icon */
-  width: 50%; /* Set a width if needed */
-  display: block; /* Make the buttons appear below each other */
+  background-color: #f78df7;
+  border: 1px solid #bf776b;
+  color: #ffabff;
+  padding: 15px 25px;
+  cursor: hand;
+  width: 50%;
+  display: block;
 }
 
 .btn-group button:not(:last-child) {

@@ -569,10 +569,10 @@ a:active {
 }
 	  .btn-group button {
   background-color: #f78df7; /* Green background */7
-  border: 1px solid pink; /* Green border */
-  color: #f78df7; /* White text */
-  padding: 10px 24px; /* Some padding */
-  cursor: pointer; /* Pointer/hand icon */
+  border: 1px solid #bf776b; /* Green border */
+  color: #ffabff; /* White text */
+  padding: 15px 25px; /* Some padding */
+  cursor: hand; /* Pointer/hand icon */
   width: 50%; /* Set a width if needed */
   display: block; /* Make the buttons appear below each other */
 }

@@ -560,7 +560,7 @@ a:active {
   }
   summary {
 	  color: $color_5;
-	  font-size: 130%;
+	  font-size: 100%;
 	  background: #8dd792;
 	  padding: 5px;
 	  border: 2px solid transparent;
@@ -570,7 +570,7 @@ a:active {
 	  .btn-group button {
   background-color: #f78df7; /* Green background */7
   border: 1px solid pink; /* Green border */
-  color: white; /* White text */
+  color: #f78df7; /* White text */
   padding: 10px 24px; /* Some padding */
   cursor: pointer; /* Pointer/hand icon */
   width: 50%; /* Set a width if needed */

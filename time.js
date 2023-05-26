@@ -2,9 +2,9 @@ function showTime() {
     const days = [ "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday" ];
     const months = [ "Jan ", "Feb ", "Mar ", "Apr ", "Jun ", "Jul ", "Aug ", "Sept ", "Oct ", "Nov ", "Dec " ]
     const d = new Date();
-    let day = days[ d.getDay() ];
+    let day = days[ dt.getDay() ];
     let dt = d.getDate();
-    let mt = months[ d.getMonth() ];
+    let mt = months[ dt.getMonth() ];
     var date = new Date();
     var h = date.getHours(); // 0 - 23
     var m = date.getMinutes(); // 0 - 59

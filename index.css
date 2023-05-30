@@ -559,7 +559,6 @@ a:active {
 	cursor: pointer;
   }
   summary {
-	  color: $color_5;
 	  font-size: 69%;
 	  background: #8dd792;
 	  padding: 5px;

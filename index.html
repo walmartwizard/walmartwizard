@@ -1,346 +1,207 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>S K Y L I N E v.1</title>
-
+<title> SITENAME.COM </title>
 <style type="text/css">
 <!--
-
-
 body {
-	background-color:#ffffff;
-	background-image:url(http://cbimg6.com/layouts/10/08/36491ac.png);
-	background-repeat:repeat-x;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-color: #dededf;
+	color: #549cd7;
+	font-size: 10px;
+	line-height: 16px;
+	font-family: Arial;
+
 }
 
-img {
-	padding:5px;
-}
-#maincontainer {
-	position:absolute;
-	left:319px;
-	top:412px;
-	width:554px;
-	height:607px;
-	z-index:1;
-}
+#content {
+	background-color: #FFFFFF;
+	width: 1024px;
+	margin: 0 0 auto;
+	position: absolute;
+	top: 0;
+	right: 0;
+	min-height: 500px;
+	background-image: url(http://cbimg6.com/layouts/09/10/35798ab.png);
+	float: right;	}
+
+#main {
+	margin-top: 370px;
+	width: 500px;
+	position: absolute;
+	top: 0;
+	right: 10px;
+	}
+
+#side {
+	margin-top: 39px;
+          margin-left: 310px;
+	width: 200px; 
+	position: absolute;
+	}
+
+a{
+	text-decoration: none;
+	color: #32659a;  
+
+	} 
+
+a:hover {
+	text-decoration: none;
+	color: #e26ac1;
+          background-color:white;
+          background-repeat: no-repeat
+	}
 
 h1 {
-	background-color:#f2f2f2;
-	font-size:16px;
-	color:#929292;
-	height:20px;
-	text-transform:uppercase;
-	border-bottom-width:1px;
-	border-bottom-style:solid;
-	border-bottom-color:#c6c6c6;
-	letter-spacing:3px;
-	border-top-width:1px;
-	border-top-style:solid;
-	border-top-color:#c6c6c6;
-	border-left-width:1px;
-	border-left-style:solid;
-	border-left-color:#c6c6c6;
-	border-right-width:1px;
-	border-right-style:solid;
-	border-right-color:#c6c6c6;
-
-}
-
+	font-family: "Arial Black";
+	text-transform: uppercase;
+	letter-spacing: -2px; 
+	color: #fffdfe;  
+	}    
 h2 {
-	font-size:12px;
-	width:183px;
-	border-bottom-width:1px;
-	border-bottom-style:solid;
-	border-bottom-color:#c6c6c6;
-	letter-spacing:3px;
-	border-top-width:1px;
-	border-top-style:solid;
-	border-top-color:#c6c6c6;
-	border-left-width:1px;
-	border-left-style:solid;
-	border-left-color:#c6c6c6;
-	border-right-width:1px;
-	border-right-style:solid;
-	border-right-color:#c6c6c6;
-	background-image:url(http://cbimg6.com/layouts/10/08/36491ad.png);
+	font-family: "arial";
+	text-transform: uppercase;
+	font-size: 20px;
+	color: #ad8bbb;  
+	} 
+
+a.navigation:link, a.nav:visited, a.nav:active {
+	color : #c457b2;
+	letter-spacing: 10px;
+	display : block;
+  	height:16px;
+  	text-transform:lowercase;
+  	font-size:14px;
+  	width: 150px;
+          font-family: Times new Roman;  
+  	background: rgba(160,130,160,0.2); 
+  	padding: 0px 0px 0px 10px;
+  	line-height:14px;
+	margin:10px 0px 2px 1px;
 }
 
-#table {
-	font-size:13px;
-	background-color:#ededef;
-	padding:5px;
-	color:#534f4f;
-	border-bottom-style:solid;
-	border-bottom-color:#c8c8c9;
-	border-bottom-width:1px;
-	border-top-style:solid;
-	border-top-color:#c8c8c9;
-	border-top-width:1px;
-	border-left-style:solid;
-	border-left-color:#c8c8c9;
-	border-left-width:1px;
-	border-right-style:solid;
-	border-right-color:#c8c8c9;
-	border-right-width:1px;
-
+a.navigation:hover {
+	color : white; 
+  	background-color: #ddc0d8; 
+  	width: 150px;
+  	margin-left: -10px;
 }
 
+b,strong {
+          color: #C64C6A;
+	font-family: "Verdana", Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	font-style: normal;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: uppercase;
+	}
 
-#header {
-	position:absolute;
-	left:0px;
-	top:0px;
-	width:1041px;
-	height:404px;
-	z-index:2;
-	background-image:url(http://cbimg6.com/layouts/10/08/36491ae.png);
+i, em	{ 
+	color: #1780e3;  
+	font-family: "Verdana", Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	font-style: italic;
+	font-weight: normal;
+	text-decoration: none;
+	text-transform: uppercase;
+	}
 
-}
-#SiteTitle {
-	position:absolute;
-	left:426px;
-	top:297px;
-	width:233px;
-	height:23px;
-	z-index:3;
-	overflow:hidden;
-	color:#5b7073;
-	letter-spacing:5px;
-	font-size:14px;
-	text-transform:uppercase;
-	text-align:center;
-	font-family:"Palatino Linotype";
-}
-a.nav:active, a.nav:visited, a.nav:link {
-    display:Inline-block;
-	color:#6f899f;
-    font-family:georgia;
-	text-align: center;
-	width:85px;
-    font-size:10px;
-    font-weight:None;
-    text-decoration:none;
-    letter-spacing:3px;
-    line-height:10px;
-	text-transform:uppercase;
-
-}
-
-a.nav:hover {
-	display:Inline-block;
-    color:#9abad5;
-    font-family:georgia;
-	text-align: center;
-    font-size:10px;
-	width:85px;
-    font-weight:normal;
-    text-decoration: none;
-    letter-spacing:3px;
-    line-height:10px;
-	text-transform:uppercase;
-	border-bottom-width:1px;
-	border-bottom-style:solid;
-	border-bottom-color:#bbbaba;
-
-}
-
-
-a.link:active, a.link:visited, a.link:link {
-    display:block;
-	color:#8f9b9d;
-    font-family:georgia;
-	text-align: left;
-    font-size:11px;
-    font-weight:None;
-    text-decoration:none;
-    line-height:14px;
-	height:16px;
-	width:183px;
-	background-image:url(http://cbimg6.com/layouts/10/08/36491af.png);
-
-}
-
-a.link:hover {
-	display:block;
-    color:#626c6e;
-    font-family:georgia;
-	text-align: left;
-    font-size:11px;
-    font-weight:normal;
-    text-decoration: none;
-    line-height:14px;
-	margin-left:3px;
-	height:16px;
-	background-image:url(http://cbimg6.com/layouts/10/08/36491ag.png);
-
-}
-
-
-#RightNav {
-	position:absolute;
-	left:896px;
-	top:437px;
-	width:183px;
-	height:649px;
-	z-index:4;
-	font-size:12px;
-	color:#6f7a79;
-}
-
-#TopNav {
-	position:absolute;
-	left:235px;
-	top:377px;
-	width:853px;
-	height:36px;
-	z-index:5;
-}
-#LeftNav {
-	position:absolute;
-	left:111px;
-	top:437px;
-	width:183px;
-	height:649px;
-	z-index:6;
-	font-size:12px;
-	color:#6f7a79;
-}
+u 	{
+	color: #C64C6A;
+	font-family: "Verdana", Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-bottom: 2px dotted #1780e3;
+	} 
 
 blockquote {
-	width:400px;
-	color:#929292;
-	font-size:12px;
-	border-left-color:#d4d4d4;
-	border-left-width:3px;
-	border-left-style:solid;
-	border-right-color:#d4d4d4;
-	border-right-width:3px;
-	border-right-style:solid;
-	background-color:#f2f2f2;
-}
+	background-color:#ffffff;
+	font-family: Arial;
+	font-size: 10px;
+	font-style: italic;
+	line-height:15px;
+	padding: 15 0 15 0px;
+  	padding-left: 38px;
+	color: #908f8a;
+  	margin-left: 0px;
+	text-align:left;
+          border-left: 20px solid #df6596;
+         border-right: 20px solid #64a4e6;
+} 
+ -->
+</style></head>
 
--->
-</style>
-</head>
-<div id="header"></div>
-<div id="SiteTitle">The Site Title </div>
+<body>
 
-
-
-
-<div id="maincontainer">
-
-<div id="table">
-<h1>Hello there</h1>
-<blockquote>This is a blockquote section<br />
-<p><img src="http://cbimg6.com/layouts/10/08/36491aa.png" width="88" height="31" align="left"/>
+<div id="content">
 
 
-<li type="circle">No stealing</li>
-<li type="circle">No redistributing</li>
-<li type="circle">Do not call as your own</li>
-<li type="circle">You can tamper with the codes</li>
-<li type="circle">At least one of the following credits should remain visible</li>
-<li type="circle">You can use my codes as your own, just contact me via createblog first, otherwise it would be stealing.</li>
 
-</blockquote>
+	<div style="position: absolute; top: 0px; left: 0px; height: 1000; width: 200px;overflow: auto;" id="side">
 
-  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent aliquam,  justo convallis luctus rutrum, erat nulla fermentum diam, at nonummy quam  ante ac quam. Maecenas urna purus, fermentum id, molestie in, commodo  porttitor, felis. Nam blandit quam ut lacus. Quisque ornare risus quis  ligula. Phasellus tristique purus a augue condimentum adipiscing. Aenean  sagittis. Etiam leo pede, 
+<h1>NAVIGATION</h1>
+<a class="navigation" href="#">HOME</a>
+ <a class="navigation" href="#">WEBMISS</a>
+<a class="navigation" href="#">Trash</a>
+<a class="navigation" href="#">Domain</a>
+<a class="navigation" href="#"> Affiliates</a>
 
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent aliquam,  justo convallis luctus rutrum, erat nulla fermentum diam, at nonummy quam  ante ac quam. Maecenas urna purus, fermentum id, molestie in, commodo  porttitor, felis. Nam blandit quam ut lacus. Quisque ornare risus quis  ligula. Phasellus tristique purus a augue condimentum adipiscing. Aenean  sagittis. Etiam leo pede, 
+<h2> About me</h2>
+<img style="float: left;" src="http://cbimg6.com/layouts/09/10/35798aa.png" /> <u>content </u><br> content 
+content content content content
+ content content content content content content 
+content content content content content content
+ content content content content content 
+<h1>Header</h1>
+content content content content content content
+ content content content content content content 
+content <i>content </i>content content content content
+ content content content content content content 
+content content content content content content
+ 
+<h2>Header</h2>
+content content content content content content
+ content content content content content content 
+content content<b> content content</b> content content
+ content content content content content content 
+content content content content content content
+<h1>Credits</h1> 
+<b>Images :</b> <a href="http://aethereality.net/"> Aethereality / Full Moon Wo Sagashite /Arina Tanemura</a><br> 
 
-</div>  
+                                 <b>Textures : </b><a href="http://hybrid-genesis.com/">Hybrid Genesis</a> <br>
+                                 <b>Brushes  : </b><a href="http://hybrid-genesis.com/">Hybrid Genesis</a>  <br>
+			   <b>Designed by  : </b><a href="http://celestialdicio.createblog.com/">Amara K . / CelestialDicio</a>   
+
+</div>  	 
+
+	
+<p> <div id ="main">
+
+			
+			
+			   
+			 <h1>HEADER</h1></P>
+ <i>Lorem ipsum dolor sit amet,</i><b> consetetur sadipscing elitr</b>, <u>aed diam nonumy eirmod </u>tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+<blockquote>
+       Quote: Conveniet nulli, qui secum dissidet ipse </blockquote>
+			 <div>
+			  
+			 </div>
 <p>
-  <div id="table">
-    <h1>My name is ____</h1>
-  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent aliquam,  justo convallis luctus rutrum, erat nulla fermentum diam, at nonummy quam  ante ac quam. Maecenas urna purus, fermentum id, molestie in, commodo  porttitor, felis. Nam blandit quam ut lacus. Quisque ornare risus quis  ligula. Phasellus tristique purus a augue condimentum adipiscing. Aenean  sagittis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent aliquam,  justo convallis luctus rutrum, erat nulla fermentum diam, at nonummy quam  ante ac quam. Maecenas urna purus, fermentum id, molestie in, commodo  porttitor, felis. Nam blandit quam ut lacus. Quisque ornare risus quis  ligula. Phasellus tristique purus a augue condimentum adipiscing. Aenean  sagittis. Etiam leo pede,</p>
+			 <<h1>Lorem Ipsum ...</h1></P>
 
-  </div>    
-<p>
-
-    <div id="table">
-    <h1>Extra table</h1>
-  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent aliquam,  justo convallis luctus rutrum, erat nulla fermentum diam, at nonummy quam  ante ac quam. Maecenas urna purus, fermentum id, molestie in, commodo  porttitor, felis. Nam blandit quam ut lacus. Quisque ornare risus quis  ligula. Phasellus tristique purus a augue condimentum adipiscing. Aenean  sagittis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent aliquam,  justo convallis luctus rutrum, erat nulla fermentum diam, at nonummy quam  ante ac quam. Maecenas urna purus, fermentum id, molestie in, commodo  porttitor, felis. Nam blandit quam ut lacus. Quisque ornare risus quis  ligula. Phasellus tristique purus a augue condimentum adipiscing. Aenean  sagittis. Etiam leo pede,</p>
-
-  </div>    
-  
-<p>
-
+			 <div>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. </div>
+			
+		
+			 </div>
+			 
 </div>
-
-
-<div id="TopNav">
-<a href="../link" class="nav">Home</a>
-<a href="../link" class="nav">Site</a>
-<a href="../link" class="nav">Content</a>
-<a href="../link" class="nav">About</a>
-<a href="../link" class="nav">Blog</a>
-<a href="../link" class="nav">Info</a>
-<a href="../link" class="nav">Contact</a>
-<a href="http://justleah.createblog.com" class="nav">Designer</a>
-
-</div>
-
-
-
-
-
-
-<div id="RightNav">
-<h2>About..</h2>
-<img src="http://cbimg6.com/layouts/10/08/36491ab.png" width="100" height="100" align="left"/>
-Lorem ipsum dolor sit amet,  adipiscing elit. Praesent aliquam,  justo convallis luctus rutrum, erat nulla fermentum diam, at nonummy quam  ante ac quam. Maecenas urna purus, 
-
-
-
-<h2>Navigate</h2>
-<a href="../link" class="link">Clear</a>
-<a href="../link" class="link">Sitely</a>
-<a href="../link" class="link">visitor</a>
-<a href="../link" class="link">Friends</a>
-<a href="../link" class="link">Interact</a>
-<a href="http://justleah.createblog.com" class="link">Designer</a>
-
-
-<h2>Archives</h2>
-<a href="../link" class="link">Linkage</a>
-<a href="../link" class="link">Linkage</a>
-<a href="../link" class="link">Linkage</a>
-<a href="../link" class="link">Linkage</a>
-<a href="../link" class="link">Linkage</a>
-<a href="../link" class="link">Linkage</a>
-
-
-
-
-
-</div>
-
-
-<div id="LeftNav">
-<h2>Webmaster</h2>
-<p><img src="http://cbimg6.com/layouts/10/08/36491aa.pngg" width="88" height="31" /></p>
-<p>
-  
-  Lorem ipsum dolor sit amet,  adipiscing elit. Praesent aliquam,  justo convallis luctus rutrum, erat nulla fermentum diam, at nonummy quam  ante ac quam. Maecenas urna purus,
-</p>
-<h2>Quicklinks</h2>
-
-<a href="../link" class="link">Linkage</a>
-<a href="../link" class="link">Linkage</a>
-<a href="../link" class="link">Linkage</a>
-<a href="../link" class="link">Linkage</a>
-<a href="../link" class="link">Linkage</a>
-<a href="../link" class="link">Linkage</a>
-
-<h2>Affiliates</h2>
-
-<a href="../link" class="link">Linkage</a>
-<a href="../link" class="link">Linkage</a>
-<a href="../link" class="link">Linkage</a>
-<a href="../link" class="link">Linkage</a>
-<a href="../link" class="link">Linkage</a>
-<a href="../link" class="link">Linkage</a>
-<a href="../link" class="link">Linkage</a></div>
+</body>
+</html> 

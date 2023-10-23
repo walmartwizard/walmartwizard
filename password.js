@@ -1,7 +1,7 @@
     function checkPswd() {
-      var confirmPassword = "YEEZY";
+      var confirmPassword = "poopyfart24!";
       var password = document.getElementById("pswd").value;
       if (password == confirmPassword) {
-        window.location = "welkom.html";
+        window.location = "temp.html";
       }
     }

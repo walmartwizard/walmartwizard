@@ -190,7 +190,7 @@ input, select, textarea {
 		font-size: 2.75em;
 		-webkit-text-stroke: 1px #000000;
 		font: italic bold 50px/30px Helvetica, serif;
-		color: rgba(0, 0, 0, 0.5);
+		opacity: 0.0;
 	}
 
 		h1.major {
